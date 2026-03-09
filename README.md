@@ -15,7 +15,7 @@ Laravel SSO is a package for implementing Single Sign-On (SSO) authorizations in
 To install the package, use Composer:
 
 ```bash
-composer require wemx/sso-pterodactyl
+composer require cloee/sso-pterodactyl
 ```
 
 ## Configuration
@@ -64,4 +64,4 @@ If you have any questions or issues, please create a new issue in the project re
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/GIGABAIT93/LaravelSso/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Sachin-Cloee/sso-pterodactyl/blob/main/LICENSE) file for details.

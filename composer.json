@@ -1,5 +1,5 @@
 {
-    "name": "wemx/sso-pterodactyl",
+    "name": "cloee/sso-pterodactyl",
     "description": "Allows clients from BetterPterodactyl (paymenter) login to their Pterodactyl account with a single redirect",
     "type": "library",
     "license": "MIT",

@@ -1,5 +1,5 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/wemx/sso-pterodactyl.svg?style=flat-square)](https://packagist.org/packages/wemx/sso-pterodactyl)
-[![Total Downloads](https://img.shields.io/packagist/dt/wemx/sso-pterodactyl.svg?style=flat-square)](https://packagist.org/packages/wemx/sso-pterodactyl)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cloee/sso-pterodactyl.svg?style=flat-square)](https://packagist.org/packages/cloee/sso-pterodactyl)
+[![Total Downloads](https://img.shields.io/packagist/dt/cloee/sso-pterodactyl.svg?style=flat-square)](https://packagist.org/packages/cloee/sso-pterodactyl)
 
 # Laravel SSO
 
@@ -8,7 +8,9 @@ Laravel SSO is a package for implementing Single Sign-On (SSO) authorizations in
 ## Requirements
 
 - PHP 8.0 or higher
-- Laravel 10 or higher
+- Laravel 10, 11, 12, or 13
+
+Laravel 13 requires PHP 8.3 or higher.
 
 ## Installation
 
@@ -34,8 +36,8 @@ Make sure to paste the SSO key on your WemX application
 
 ## Usage
 
-1. Generate a access token for using a GET request from your application
-2. Redirect the user to the SSO redirect with their token
+1. Generate an access token using a `GET` request from your application.
+2. Redirect the user to the SSO URL returned by the panel.
 
 ```php
 public function loginPanel()
@@ -56,7 +58,7 @@ public function loginPanel()
     return redirect()->intended($response['redirect']);
 }
 ```
-After being redirected to the /sso-login route, the user will be automatically authorized on the Laravel panel if their email address matches a record in the database.
+After being redirected to the returned `/sso-wemx/{token}` route, the user will be automatically authorized on the Laravel panel.
 
 ## Support
 
